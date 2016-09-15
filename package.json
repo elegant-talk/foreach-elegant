@@ -1,0 +1,24 @@
+{
+  "name": "foreach-elegant",
+  "version": "1.0.0",
+  "description": "A foreach that supports arrays and objects, provides the value and key/index, as well as break support on return false",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bevry/foreach-elegant.git"
+  },
+  "keywords": [
+    "foreach",
+    "foreach-object",
+    "foreach-array"
+  ],
+  "author": "2016+ Bevry Pty Ltd <us@bevry.me> (https://bevry.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bevry/foreach-elegant/issues"
+  },
+  "homepage": "https://github.com/bevry/foreach-elegant#readme"
+}
