@@ -1,4 +1,5 @@
 // Adapted from https://github.com/bevry/eachr
+/* flow */
 
 // Import
 const {equal, deepEqual} = require('assert-helpers')

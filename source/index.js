@@ -1,4 +1,5 @@
-module.exports = function foreachElegant (list /* :Array|Object */, iterator /* :function */ ) {
+/* @flow */
+module.exports = function foreachElegant (list /* :Array<mixed>|{[key:string]:mixed} */, iterator /* :function */ ) {
 	if ( Array.isArray(list) ) {
 		for ( let index = 0; index < list.length; ++index ) {
 			const value = list[index]
