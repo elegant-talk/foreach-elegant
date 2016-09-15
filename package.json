@@ -12,12 +12,19 @@
     "foreach-object",
     "foreach-array"
   ],
-  "author": "2016+ Bevry Pty Ltd <us@bevry.me> (https://bevry.me)",
+  "author": "2016+ Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
   "license": "MIT",
   "dependencies": {
     "projectz": "^1.1.6"
   },
   "scripts": {
     "compile": "projectz compile"
+  },
+  "maintainers": [],
+  "contributors": [
+    "Benjamin Lupton (http://balupton.com)"
+  ],
+  "bugs": {
+    "url": "https://github.com/bevry/foreach-elegant/issues"
   }
 }
