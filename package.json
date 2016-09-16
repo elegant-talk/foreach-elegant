@@ -56,6 +56,7 @@
     {
       "description": "Source + ESNext + Require + Flow Type Comments",
       "entry": "source/index.js",
+      "directory": "source",
       "syntaxes": [
         "javascript",
         "esnext",
@@ -68,6 +69,7 @@
     {
       "description": "Babel Compiled + ES2015 + Require",
       "entry": "es2015/index.js",
+      "directory": "es2015",
       "syntaxes": [
         "javascript",
         "es2015",
@@ -75,7 +77,7 @@
       ]
     }
   ],
-  "main": "es2015/index.js",
+  "main": "index.js",
   "browser": "es2015/index.js",
   "scripts": {
     "setup": "npm install",
@@ -92,9 +94,11 @@
     "pretest": "npm run test:eslint && npm run test:flow",
     "test:eslint": "eslint ./source",
     "test:flow": "flow check",
-    "test": "node ./es2015/test.js"
+    "test": "node --harmony -e \"require('editions').requirePackage(process.cwd(), require, 'test.js')\""
   },
-  "dependencies": {},
+  "dependencies": {
+    "editions": "^1.1.2"
+  },
   "devDependencies": {
     "assert-helpers": "^4.4.0",
     "babel-cli": "^6.14.0",
